@@ -176,7 +176,7 @@ print(circulo.radius)
 
 El módulo también plantea la creación de una clase `Elipse` utilizando `matplotlib`, con métodos para cambiar el ancho, alto, color de relleno, color de borde y dibujar la figura.
 
-## Práctico Bono
+## Práctico Bono ➕
 
 `Practico_Bono_1.ipynb` reúne ejercicios para aplicar los conceptos de los nueve módulos anteriores.
 
@@ -274,7 +274,7 @@ Una organización sugerida es:
 └── README.md
 ```
 
-## Autor
+## Autor 🎨
 
 **Gabriel Jaramillo Cuberos**  
 Procesamiento de Datos (1255)
