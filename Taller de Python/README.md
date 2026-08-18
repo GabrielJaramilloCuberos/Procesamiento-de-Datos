@@ -1,9 +1,9 @@
-# Taller de Introducción a Python
+# Taller de Introducción a Python 🐍
 
 Material de trabajo de la asignatura **Procesamiento de Datos (1255)**.  
 El taller presenta una introducción progresiva a Python mediante nueve módulos y un práctico integrador.
 
-## Contenido
+## Contenido 📃
 
 El material está organizado de la siguiente manera:
 
@@ -20,11 +20,11 @@ El material está organizado de la siguiente manera:
 | 9 | `09_Python_Clases.ipynb` | Clases y objetos |
 | 10 | `Practico_Bono_1.ipynb` | Ejercicios integradores |
 
-## Objetivo
+## Objetivo 🎯
 
 Desarrollar los fundamentos necesarios para programar en Python, comenzando por el manejo de datos y avanzando hacia estructuras de control, funciones y programación orientada a objetos.
 
-## Módulos
+## Módulos 〽️
 
 ### 1. Cadenas
 
@@ -176,7 +176,7 @@ print(circulo.radius)
 
 El módulo también plantea la creación de una clase `Elipse` utilizando `matplotlib`, con métodos para cambiar el ancho, alto, color de relleno, color de borde y dibujar la figura.
 
-## Práctico Bono
+## Práctico Bono ➕
 
 `Practico_Bono_1.ipynb` reúne ejercicios para aplicar los conceptos de los nueve módulos anteriores.
 
@@ -274,7 +274,7 @@ Una organización sugerida es:
 └── README.md
 ```
 
-## Autor
+## Autor 🎨
 
 **Gabriel Jaramillo Cuberos**  
 Procesamiento de Datos (1255)
