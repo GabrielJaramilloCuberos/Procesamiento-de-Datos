@@ -1,12 +1,11 @@
-# Motor de Inferencia — Red Bayesiana
-**Proyecto 3 · Introducción a la Inteligencia Artificial**  
+# Motor de Inferencia — Red Bayesiana 
 Pontificia Universidad Javeriana
 
 ---
 
 ## Descripción
 
-Este proyecto implementa un **motor de inferencia basado en Redes Bayesianas** en C++. Una Red Bayesiana es un grafo acíclico dirigido (DAG) donde cada nodo representa una variable aleatoria y las aristas representan dependencias probabilísticas entre ellas.
+Este motor implementa una **Red de Inferencia Bayesiana** en C++. Una Red Bayesiana es un grafo acíclico dirigido (DAG) donde cada nodo representa una variable aleatoria y las aristas representan dependencias probabilísticas entre ellas. Junto con un script de Python, genera los datos necesarios para construir la red y poder explicar los **motores o impulsores de negocio** en procesamiento de datos.
 
 El programa permite:
 - Cargar la estructura de la red (variables y sus relaciones padre-hijo) desde un archivo de texto.
@@ -41,14 +40,14 @@ Representa un nodo dentro de la red bayesiana.
 ### `RedBayesiana`
 Representa la red completa y gestiona todas las variables y sus conexiones.
 
-## Compilación y ejecución
+## Compilación, ejecución y destrucción
 
-### Compilar
+### Compilar y ejecutar
 ```bash
-g++ main.cpp TADS/VariableAleatoria.cpp TADS/RedBayesiana.cpp Utils/utils.cpp -o motor
+make run
 ```
 
-### Ejecutar
+### Destruir
 ```bash
-./motor
+make clean
 ```
