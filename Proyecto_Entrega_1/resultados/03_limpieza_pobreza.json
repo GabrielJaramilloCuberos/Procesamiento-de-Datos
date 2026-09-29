@@ -1,0 +1,10 @@
+{
+  "filas_originales": 68273,
+  "duplicados_exactos": 0,
+  "filas_sin_clave": 0,
+  "filas_con_clave_conflictiva_excluidas": 0,
+  "filas_conservadas": 68273,
+  "pesos_invalidos": 0,
+  "borough_desconocido": 0,
+  "estado_pobreza_desconocido": 0
+}

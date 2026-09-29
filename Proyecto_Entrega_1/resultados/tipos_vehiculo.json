@@ -1,0 +1,50 @@
+[
+  {
+    "tipo_vehiculo": "SEDAN",
+    "count": 197097
+  },
+  {
+    "tipo_vehiculo": "STATION WAGON/SPORT UTILITY VEHICLE",
+    "count": 154928
+  },
+  {
+    "tipo_vehiculo": "SIN DATO",
+    "count": 33151
+  },
+  {
+    "tipo_vehiculo": "TAXI",
+    "count": 21798
+  },
+  {
+    "tipo_vehiculo": "PICK-UP TRUCK",
+    "count": 14232
+  },
+  {
+    "tipo_vehiculo": "BOX TRUCK",
+    "count": 10011
+  },
+  {
+    "tipo_vehiculo": "BUS",
+    "count": 7173
+  },
+  {
+    "tipo_vehiculo": "BIKE",
+    "count": 6238
+  },
+  {
+    "tipo_vehiculo": "TRACTOR TRUCK DIESEL",
+    "count": 3791
+  },
+  {
+    "tipo_vehiculo": "VAN",
+    "count": 3261
+  },
+  {
+    "tipo_vehiculo": "MOTORCYCLE",
+    "count": 2091
+  },
+  {
+    "tipo_vehiculo": "DUMP",
+    "count": 1429
+  }
+]

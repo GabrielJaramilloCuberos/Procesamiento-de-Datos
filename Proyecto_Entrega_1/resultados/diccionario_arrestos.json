@@ -1,0 +1,116 @@
+[
+  {
+    "atributo": "arrest_key",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Randomly generated persistent ID for each arrest ",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "arrest_date",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Exact date of arrest for the reported event",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "pd_cd",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Three digit internal classification code (more granular than Key Code)",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "pd_desc",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Description of internal classification corresponding with PD code (more granular than Offense Description)",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "ky_cd",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Three digit internal classification code (more general category than PD code)",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "ofns_desc",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Description of internal classification corresponding with KY code (more general category than PD description)",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "law_code",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Law code charges corresponding to the NYS Penal Law, VTL and other various local laws",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "law_cat_cd",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Level of offense: felony, misdemeanor, violation ",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "arrest_boro",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Borough of arrest. B(Bronx), S(Staten Island), K(Brooklyn), M(Manhattan), Q(Queens)",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "arrest_precinct",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Precinct where the arrest occurred",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "jurisdiction_code",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Jurisdiction responsible for arrest. Jurisdiction codes 0(Patrol), 1(Transit) and 2(Housing) represent NYPD whilst codes 3 and more represent non NYPD jurisdictions",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "age_group",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Perpetrator’s age within a category",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "perp_sex",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Perpetrator’s sex description",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "perp_race",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Perpetrator’s race description",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "x_coord_cd",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Midblock X-coordinate for New York State Plane Coordinate System, Long Island Zone, NAD 83, units feet (FIPS 3104)",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "y_coord_cd",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Midblock Y-coordinate for New York State Plane Coordinate System, Long Island Zone, NAD 83, units feet (FIPS 3104)",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "latitude",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Latitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326) ",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "longitude",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Longitude coordinate for Global Coordinate System, WGS 1984, decimal degrees (EPSG 4326)",
+    "codigos_notas": ""
+  },
+  {
+    "atributo": "lon_lat",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Georeferenced Point Column based on Longitude and Latitude fields",
+    "codigos_notas": ""
+  }
+]

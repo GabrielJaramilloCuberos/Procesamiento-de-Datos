@@ -1,0 +1,42 @@
+[
+  {
+    "anio": 2018,
+    "borough": "Bronx",
+    "hay_poblacion": true,
+    "hay_pobreza": true,
+    "hay_arrestos_2018": true,
+    "hay_siniestros_por_distrito": false
+  },
+  {
+    "anio": 2018,
+    "borough": "Brooklyn",
+    "hay_poblacion": true,
+    "hay_pobreza": true,
+    "hay_arrestos_2018": true,
+    "hay_siniestros_por_distrito": false
+  },
+  {
+    "anio": 2018,
+    "borough": "Manhattan",
+    "hay_poblacion": true,
+    "hay_pobreza": true,
+    "hay_arrestos_2018": true,
+    "hay_siniestros_por_distrito": false
+  },
+  {
+    "anio": 2018,
+    "borough": "Queens",
+    "hay_poblacion": true,
+    "hay_pobreza": true,
+    "hay_arrestos_2018": true,
+    "hay_siniestros_por_distrito": false
+  },
+  {
+    "anio": 2018,
+    "borough": "Staten Island",
+    "hay_poblacion": true,
+    "hay_pobreza": true,
+    "hay_arrestos_2018": true,
+    "hay_siniestros_por_distrito": false
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "anio": 2018,
+  "datos": [
+    {
+      "anio": 2018,
+      "borough": "Bronx",
+      "poblacion": 1432000,
+      "muestra_pobreza": 9806,
+      "denominador_pobreza": 1389245.0,
+      "numerador_pobreza": 376487.0,
+      "pobreza_pct": 27.100115530378012,
+      "denominador_educacion_25mas": 902379.0,
+      "numerador_sin_secundaria": 236946.0,
+      "sin_secundaria_25mas_pct": 26.257924885220067,
+      "arrestos": 215,
+      "arrestos_por_100mil": 15.013966480446927
+    },
+    {
+      "anio": 2018,
+      "borough": "Brooklyn",
+      "poblacion": 2583000,
+      "muestra_pobreza": 24184,
+      "denominador_pobreza": 2540638.0,
+      "numerador_pobreza": 516035.0,
+      "pobreza_pct": 20.31123678383146,
+      "denominador_educacion_25mas": 1751207.0,
+      "numerador_sin_secundaria": 287601.0,
+      "sin_secundaria_25mas_pct": 16.423015668621698,
+      "arrestos": 237,
+      "arrestos_por_100mil": 9.175377468060395
+    },
+    {
+      "anio": 2018,
+      "borough": "Manhattan",
+      "poblacion": 1629000,
+      "muestra_pobreza": 9065,
+      "denominador_pobreza": 1568288.0,
+      "numerador_pobreza": 236151.0,
+      "pobreza_pct": 15.057884776265585,
+      "denominador_educacion_25mas": 1227516.0,
+      "numerador_sin_secundaria": 143281.0,
+      "sin_secundaria_25mas_pct": 11.672434412260207,
+      "arrestos": 209,
+      "arrestos_por_100mil": 12.829957028852057
+    },
+    {
+      "anio": 2018,
+      "borough": "Queens",
+      "poblacion": 2279000,
+      "muestra_pobreza": 21198,
+      "denominador_pobreza": 2250749.0,
+      "numerador_pobreza": 383134.0,
+      "pobreza_pct": 17.02251117294732,
+      "denominador_educacion_25mas": 1628155.0,
+      "numerador_sin_secundaria": 281924.0,
+      "sin_secundaria_25mas_pct": 17.315550423639028,
+      "arrestos": 206,
+      "arrestos_por_100mil": 9.03905221588416
+    },
+    {
+      "anio": 2018,
+      "borough": "Staten Island",
+      "poblacion": 476000,
+      "muestra_pobreza": 4020,
+      "denominador_pobreza": 469393.0,
+      "numerador_pobreza": 75086.0,
+      "pobreza_pct": 15.996403866269842,
+      "denominador_educacion_25mas": 326604.0,
+      "numerador_sin_secundaria": 39758.0,
+      "sin_secundaria_25mas_pct": 12.173151584181456,
+      "arrestos": 50,
+      "arrestos_por_100mil": 10.504201680672269
+    }
+  ],
+  "nota": "Los null son información no disponible. No son ceros. "
+}

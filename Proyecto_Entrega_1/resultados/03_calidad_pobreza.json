@@ -1,0 +1,368 @@
+[
+  {
+    "columna": "serialno",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "sporder",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "pwgtp",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "wgtp",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "agep",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "cit",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "rel",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "sch",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "schg",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "schl",
+    "faltantes": 2107,
+    "total": 68273,
+    "porcentaje": 3.086
+  },
+  {
+    "columna": "sex",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "esr",
+    "faltantes": 11798,
+    "total": 68273,
+    "porcentaje": 17.281
+  },
+  {
+    "columna": "lanx",
+    "faltantes": 3533,
+    "total": 68273,
+    "porcentaje": 5.175
+  },
+  {
+    "columna": "eng",
+    "faltantes": 37557,
+    "total": 68273,
+    "porcentaje": 55.01
+  },
+  {
+    "columna": "msp",
+    "faltantes": 11021,
+    "total": 68273,
+    "porcentaje": 16.143
+  },
+  {
+    "columna": "mar",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "wkw",
+    "faltantes": 31394,
+    "total": 68273,
+    "porcentaje": 45.983
+  },
+  {
+    "columna": "wkhp",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "dis",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "jwtr",
+    "faltantes": 34956,
+    "total": 68273,
+    "porcentaje": 51.2
+  },
+  {
+    "columna": "np",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "ten",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "hht",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "agecateg",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "boro",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "citizenstatus",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "educattain",
+    "faltantes": 2107,
+    "total": 68273,
+    "porcentaje": 3.086
+  },
+  {
+    "columna": "est_childcare",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_commuting",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_eitc",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_ficatax",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_heap",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_housing",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_incometax",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_moop",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_nutrition",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_povgap",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "est_povgapindex",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "ethnicity",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "famtype_pu",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "ftptwork",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "intp_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "mrgp_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "nycgov_income",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "nycgov_pov_stat",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "nycgov_rel",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "nycgov_threshold",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "off_pov_stat",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "off_threshold",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "oi_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "pa_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "povunit_id",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "povunit_rel",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "pretaxincome_pu",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "retp_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "rntp_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "semp_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "ssip_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "ssp_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "totalworkhrs_pu",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "wagp_adj",
+    "faltantes": 0,
+    "total": 68273,
+    "porcentaje": 0.0
+  }
+]

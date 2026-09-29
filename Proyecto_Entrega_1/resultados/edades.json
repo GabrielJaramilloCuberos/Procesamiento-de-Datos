@@ -1,0 +1,22 @@
+[
+  {
+    "grupo_edad": "0–17",
+    "personas_estimadas": 1728318.0
+  },
+  {
+    "grupo_edad": "18–24",
+    "personas_estimadas": 654134.0
+  },
+  {
+    "grupo_edad": "25–44",
+    "personas_estimadas": 2617099.0
+  },
+  {
+    "grupo_edad": "45–64",
+    "personas_estimadas": 2018386.0
+  },
+  {
+    "grupo_edad": "65 o más",
+    "personas_estimadas": 1200376.0
+  }
+]

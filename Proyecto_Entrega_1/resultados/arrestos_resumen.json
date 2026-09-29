@@ -1,0 +1,76 @@
+{
+  "version": 1,
+  "anio_objetivo": 2018,
+  "estado": "disponible",
+  "fuente": "Arrestos_NY.csv",
+  "tamano_fuente": 223171,
+  "modificacion_fuente_ns": 1790015290223432077,
+  "fecha_ejecucion_utc": "2026-09-22T01:11:50.413356+00:00",
+  "notas": {
+    "cobertura": [
+      {
+        "anio": 2018,
+        "count": 917
+      }
+    ],
+    "auditoria": {
+      "filas_originales": 917,
+      "duplicados_exactos": 0,
+      "filas_sin_clave": 0,
+      "filas_con_clave_conflictiva_excluidas": 0,
+      "filas_conservadas": 917,
+      "sin_distrito_interpretable": 0
+    },
+    "unidad": "eventos de arresto"
+  },
+  "schema": {
+    "type": "struct",
+    "fields": [
+      {
+        "name": "anio",
+        "type": "integer",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "borough",
+        "type": "string",
+        "nullable": true,
+        "metadata": {}
+      },
+      {
+        "name": "arrestos",
+        "type": "long",
+        "nullable": false,
+        "metadata": {}
+      }
+    ]
+  },
+  "datos": [
+    {
+      "anio": 2018,
+      "borough": "Brooklyn",
+      "arrestos": 237
+    },
+    {
+      "anio": 2018,
+      "borough": "Staten Island",
+      "arrestos": 50
+    },
+    {
+      "anio": 2018,
+      "borough": "Manhattan",
+      "arrestos": 209
+    },
+    {
+      "anio": 2018,
+      "borough": "Bronx",
+      "arrestos": 215
+    },
+    {
+      "anio": 2018,
+      "borough": "Queens",
+      "arrestos": 206
+    }
+  ]
+}

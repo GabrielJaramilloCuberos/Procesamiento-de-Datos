@@ -1,0 +1,22 @@
+[
+  {
+    "educattain_num": 1.0,
+    "personas_estimadas": 989510.0,
+    "nivel": "Menos de secundaria"
+  },
+  {
+    "educattain_num": 2.0,
+    "personas_estimadas": 1369308.0,
+    "nivel": "Secundaria completa"
+  },
+  {
+    "educattain_num": 3.0,
+    "personas_estimadas": 1165451.0,
+    "nivel": "Estudios superiores sin bachelor"
+  },
+  {
+    "educattain_num": 4.0,
+    "personas_estimadas": 2311592.0,
+    "nivel": "Bachelor o superior"
+  }
+]

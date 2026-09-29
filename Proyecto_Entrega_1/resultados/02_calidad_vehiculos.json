@@ -1,0 +1,152 @@
+[
+  {
+    "columna": "unique_id",
+    "faltantes": 0,
+    "total": 4551002,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "collision_id",
+    "faltantes": 0,
+    "total": 4551002,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "crash_date",
+    "faltantes": 0,
+    "total": 4551002,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "crash_time",
+    "faltantes": 0,
+    "total": 4551002,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "vehicle_id",
+    "faltantes": 0,
+    "total": 4551002,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "state_registration",
+    "faltantes": 370303,
+    "total": 4551002,
+    "porcentaje": 8.137
+  },
+  {
+    "columna": "vehicle_type",
+    "faltantes": 281138,
+    "total": 4551002,
+    "porcentaje": 6.177
+  },
+  {
+    "columna": "vehicle_make",
+    "faltantes": 1955257,
+    "total": 4551002,
+    "porcentaje": 42.963
+  },
+  {
+    "columna": "vehicle_model",
+    "faltantes": 4490072,
+    "total": 4551002,
+    "porcentaje": 98.661
+  },
+  {
+    "columna": "vehicle_year",
+    "faltantes": 1981905,
+    "total": 4551002,
+    "porcentaje": 43.549
+  },
+  {
+    "columna": "travel_direction",
+    "faltantes": 1692631,
+    "total": 4551002,
+    "porcentaje": 37.192
+  },
+  {
+    "columna": "vehicle_occupants",
+    "faltantes": 1830645,
+    "total": 4551002,
+    "porcentaje": 40.225
+  },
+  {
+    "columna": "driver_sex",
+    "faltantes": 2349139,
+    "total": 4551002,
+    "porcentaje": 51.618
+  },
+  {
+    "columna": "driver_license_status",
+    "faltantes": 2456358,
+    "total": 4551002,
+    "porcentaje": 53.974
+  },
+  {
+    "columna": "driver_license_jurisdiction",
+    "faltantes": 2452916,
+    "total": 4551002,
+    "porcentaje": 53.898
+  },
+  {
+    "columna": "pre_crash",
+    "faltantes": 951746,
+    "total": 4551002,
+    "porcentaje": 20.913
+  },
+  {
+    "columna": "point_of_impact",
+    "faltantes": 1728917,
+    "total": 4551002,
+    "porcentaje": 37.99
+  },
+  {
+    "columna": "vehicle_damage",
+    "faltantes": 1758204,
+    "total": 4551002,
+    "porcentaje": 38.633
+  },
+  {
+    "columna": "vehicle_damage_1",
+    "faltantes": 2732772,
+    "total": 4551002,
+    "porcentaje": 60.048
+  },
+  {
+    "columna": "vehicle_damage_2",
+    "faltantes": 3161059,
+    "total": 4551002,
+    "porcentaje": 69.459
+  },
+  {
+    "columna": "vehicle_damage_3",
+    "faltantes": 3468093,
+    "total": 4551002,
+    "porcentaje": 76.205
+  },
+  {
+    "columna": "public_property_damage",
+    "faltantes": 1528858,
+    "total": 4551002,
+    "porcentaje": 33.594
+  },
+  {
+    "columna": "public_property_damage_type",
+    "faltantes": 4519917,
+    "total": 4551002,
+    "porcentaje": 99.317
+  },
+  {
+    "columna": "contributing_factor_1",
+    "faltantes": 170464,
+    "total": 4551002,
+    "porcentaje": 3.746
+  },
+  {
+    "columna": "contributing_factor_2",
+    "faltantes": 1714995,
+    "total": 4551002,
+    "porcentaje": 37.684
+  }
+]

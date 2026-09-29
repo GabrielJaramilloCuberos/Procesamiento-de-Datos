@@ -1,0 +1,368 @@
+[
+  {
+    "atributo": "serialno",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Serial Number of each Census household in survey",
+    "codigos_notas": "0000001 - 9999999 Unique identifier"
+  },
+  {
+    "atributo": "sporder",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Number of each person in Census household",
+    "codigos_notas": "01 - 20 Person number"
+  },
+  {
+    "atributo": "pwgtp",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Person weight",
+    "codigos_notas": "00001 - 09999 Integer weight of person; see first page for use of weights"
+  },
+  {
+    "atributo": "wgtp",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Housing Weight",
+    "codigos_notas": "00001 - 09999 Integer weight of housing unit"
+  },
+  {
+    "atributo": "agep",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Age of person",
+    "codigos_notas": "00  Under 1 year   \n01 - 99   1 to 99 years (Top-coded***)"
+  },
+  {
+    "atributo": "cit",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Citizenship status",
+    "codigos_notas": "1 Born in the US\n2 Born in Puerto Rico, Guam, the US Virgin Islands, or the Northern Marianas \n3 Born abroad of American parent(s) \n4 US citizen by naturalization\n5 Not a citizen of the US"
+  },
+  {
+    "atributo": "rel",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Relationship to reference person",
+    "codigos_notas": "ACS codes"
+  },
+  {
+    "atributo": "sch",
+    "tipo_leido": "string (CSV original)",
+    "significado": "School Enrollment",
+    "codigos_notas": "b N/A (less than 3)\n1 No, has not attended in the last 3 months\n2 Yes, public school or public college\n3 Yes, private school or college or home school"
+  },
+  {
+    "atributo": "schg",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Grade Level Attending",
+    "codigos_notas": "ACS codes"
+  },
+  {
+    "atributo": "schl",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Educational attainment",
+    "codigos_notas": "ACS codes"
+  },
+  {
+    "atributo": "sex",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Sex",
+    "codigos_notas": "1 Male   2 Female"
+  },
+  {
+    "atributo": "esr",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Employment status recode",
+    "codigos_notas": "b N/A (less than 16 years old)\n1 Civilian employed, at work\n2 Civilian employed, with a job but not at work\n3 Unemployed\n4 Armed forces, at work\n5 Armed forces, with a job but not at work\n6 Not in labor force"
+  },
+  {
+    "atributo": "lanx",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Language other than English spoken at home",
+    "codigos_notas": "b N/A (less than 5 years old)\n1 Yes, speaks another language\n2 No, speaks only English"
+  },
+  {
+    "atributo": "eng",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Ability to speak English",
+    "codigos_notas": "b N/A (less than 5 years old/speaks only English)\n1 Very well\n2 Well\n3 Not well\n4 Not at all"
+  },
+  {
+    "atributo": "msp",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Married, spouse present/spouse absent",
+    "codigos_notas": "b N/A (age less than 15 years)\n1 Now married, spouse present\n2 Now married, spouse absent\n3 Widowed\n4 Divorced\n5 Separated\n6 Never married"
+  },
+  {
+    "atributo": "mar",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Marital status",
+    "codigos_notas": "1 Married\n2 Widowed\n3 Divorced\n4 Separated\n5 Never married or under 15 years old"
+  },
+  {
+    "atributo": "wkw",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Weeks",
+    "codigos_notas": "1 to 52 Weeks"
+  },
+  {
+    "atributo": "wkhp",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Usual hours worked per week past 12 months",
+    "codigos_notas": "bb  N/A (less than 16 years old/did not work during the past 12 months) \n01 - 98   1 to 98 usual hours\n99  99 or more usual hours"
+  },
+  {
+    "atributo": "dis",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Disability recode",
+    "codigos_notas": "1 With a disability\n2 Without a disability"
+  },
+  {
+    "atributo": "jwtr",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Means of transportation to work",
+    "codigos_notas": "ACS codes"
+  },
+  {
+    "atributo": "np",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Number of people in housing unit",
+    "codigos_notas": "00 Vacant unit\n01 One person record (one person in household or any person in group quarters)\n02 - 20  Number of person records (number of persons inhousehold)"
+  },
+  {
+    "atributo": "ten",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Housing Tenure",
+    "codigos_notas": "b N/A  (GQ/vacant)\n1 Owned with mortgage or loan (include home equity loans)\n2 Owned free and clear\n3 Rented\n4 Occupied without payment of rent\\"
+  },
+  {
+    "atributo": "hht",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Household/family type",
+    "codigos_notas": "ACS codes"
+  },
+  {
+    "atributo": "agecateg",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Age Category",
+    "codigos_notas": "1. Under 18 years; 2.18 to 64 years;3. 65+ years"
+  },
+  {
+    "atributo": "boro",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYC Borough",
+    "codigos_notas": "1 Bronx  \n2 Brooklyn \n3 Manhattan \n4 Queens \n5 Staten Island"
+  },
+  {
+    "atributo": "citizenstatus",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Citizenship Status",
+    "codigos_notas": "1 Citizen By Birth Individual ACS \n2 Naturalized Citizen \n3 Not a Citizen"
+  },
+  {
+    "atributo": "educattain",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Educational Attainment",
+    "codigos_notas": "1 less than High School \n2 High School Degree \n3 Some College \n4 Bachelors Degree or higher"
+  },
+  {
+    "atributo": "est_childcare",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov estimated Childcare Costs",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_commuting",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov estimated Commuting Costs",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_eitc",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Estimated Earned Income Tax Credit (crédito fiscal por ingresos del trabajo estimado).",
+    "codigos_notas": "Importe monetario. Variable conservada en el original, no usada en los indicadores de estos cuadernos."
+  },
+  {
+    "atributo": "est_ficatax",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov estimated FICA (payroll) tax",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_heap",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov estimated Heating Assistance",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_housing",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov estimated adjustment to income for housing subsidy",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_incometax",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov estimated Net Income Taxes (tax paid,net of tax credits)",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_moop",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov estimated Total Medical Spending",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_nutrition",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov estimated combined Nutrition-related income adjustments (SNAP, WIC, School Meals)",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_povgap",
+    "tipo_leido": "string (CSV original)",
+    "significado": "the dollar difference between NYCgov family income and the NYCgov threshold",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "est_povgapindex",
+    "tipo_leido": "string (CSV original)",
+    "significado": "the poverty gap expressed as a proportion of the poverty threshold",
+    "codigos_notas": "Ratio of family resources to their threshold"
+  },
+  {
+    "atributo": "ethnicity",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Race/Ethnicity",
+    "codigos_notas": "1 Non-Hispanic White\n2 Non-Hispanic Black \n3 Non-Hispanic Asian \n4 Hispanic, Any Race \n5 Other Race/Ethnic Group"
+  },
+  {
+    "atributo": "famtype_pu",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Family Structure of Poverty Unit",
+    "codigos_notas": "1 Husband/Wife + child \n2 Husband/Wife no child \n3 Single Male + child \n4 Single Female + child \n5 Male unit head, no child \n6 Female unit head, no child \n7 Unrelated Indiv w/others 8 Unrelated Indiv Alone"
+  },
+  {
+    "atributo": "ftptwork",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Work Experience of Individual, Full or Part Time",
+    "codigos_notas": "1 Full Time Year Round \n2 Less than Full Time Year Round\n3 No Work"
+  },
+  {
+    "atributo": "intp_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Interest, dividends, and net rental income past 12 months (signed), adjusted by income adjustment factor",
+    "codigos_notas": "bbbbbb  =  N/A (less than 15 years old)\n000000  = None\n-09999 - -00001  = Loss of $1 to $9999 (Rounded and bottom-coded)\n000001  $1 or break even\n000002 - 999999  $2 to $999999 (Rounded and top-coded)"
+  },
+  {
+    "atributo": "mrgp_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Mortgage payment (monthly amount),adjusted by income adjustment factor",
+    "codigos_notas": "bbbbb N/A (GQ/vacant/not owned or being bought/not mortgaged)\n00001 - 99999 $1 to $99999 (Rounded and top-coded)"
+  },
+  {
+    "atributo": "nycgov_income",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCGov estimated Total Income to be compared to NYCgov Threshold for determining poverty status",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "nycgov_pov_stat",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov Poverty Status",
+    "codigos_notas": "1= In Poverty 2= Not in Poverty"
+  },
+  {
+    "atributo": "nycgov_rel",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Relations within Household",
+    "codigos_notas": "  0 Reference person \n 1 Spouse \n 2 Child (Incl up to 24 if dependents)\n 3 Sibling \n 4 Parent \n 5 Grandchild \n 6 Inlaw \n 7 Other Relative \n 8 Boarder \n 9 Roommate \n10 Unmarried partner \n11 Foster Child \n12 Other Non-Relative"
+  },
+  {
+    "atributo": "nycgov_threshold",
+    "tipo_leido": "string (CSV original)",
+    "significado": "NYCgov Poverty Threshold",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "off_pov_stat",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Official/Federal Poverty Status",
+    "codigos_notas": "1= In Poverty 2= Not in Poverty"
+  },
+  {
+    "atributo": "off_threshold",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Official/Federal Poverty Threshold",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "oi_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "All other income past 12 months, adjusted by income adjustment factor",
+    "codigos_notas": "bbbbbb  N/A (less than 15 years old)\n000000  None\n000001 - 999999  $1 to $999999 (Rounded and top-coded)"
+  },
+  {
+    "atributo": "pa_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Public assistance income past 12 months, adjusted by income adjustment factor",
+    "codigos_notas": "bbbbbb  N/A (less than 15 years old)\n000000  None\n000001 - 999999  $1 to $999999 (Rounded and top-coded)"
+  },
+  {
+    "atributo": "povunit_id",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Identifier for Poverty Units within Household",
+    "codigos_notas": "Poverty Unit are NYCgov created resource sharing units within census households.  Households may have more than one poverty unit."
+  },
+  {
+    "atributo": "povunit_rel",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Relationship within Poverty Unit",
+    "codigos_notas": "1 Head \n2 Spouse/Partner \n3 Child  (incl up to 24 if dependents)\n4 Other"
+  },
+  {
+    "atributo": "pretaxincome_pu",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Pre-Tax Cash Income",
+    "codigos_notas": "Dollar amount"
+  },
+  {
+    "atributo": "retp_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Retirement income past 12 months, adjusted by income adjustment factor",
+    "codigos_notas": "bbbbbb  N/A (less than 15 years old)\n000000  None\n000001 - 999999  $1 to $999999 (Rounded and top-coded)"
+  },
+  {
+    "atributo": "rntp_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Monthly rent,adjusted by income adjustment factor",
+    "codigos_notas": "bbbbb  N/A (GQ/vacant units, except “for rent” and “rented, not occupied”/owned or being bought /occupied without rent payment)\n00001 - 99999 $1 to $99999 (Rounded and top-coded)"
+  },
+  {
+    "atributo": "semp_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Self-employment income past 12 months (signed), adjusted by income adjustment factor",
+    "codigos_notas": "bbbbbb  N/A (less than 15 years old)\n000000  None          \n-10000 - -00001  Loss of $1 to $10000 (Rounded and bottom-coded)\n000001  $1 or break even      \n000002 - 999999  $2 to $999999 (Rounded and top-coded)"
+  },
+  {
+    "atributo": "ssip_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Supplementary Security Income past 12 months, adjusted by income adjustment factor",
+    "codigos_notas": "bbbbb  N/A (less than 15 years old)\n00000   None\n00001 - 99999 $1 to $99999 (Rounded)"
+  },
+  {
+    "atributo": "ssp_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Social Security income past 12 months, adjusted by income adjustment factor",
+    "codigos_notas": "bbbbb  N/A (less than 15 years old)\n00000   None\n00001 - 99999 $1 to $99999 (Rounded)"
+  },
+  {
+    "atributo": "totalworkhrs_pu",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Total Annual Hours worked by Poverty Unit members",
+    "codigos_notas": "1 3500+ Hrs (Two Full-Time, Year-Round Workers)\n2 > 2340 & < 3500 Hrs (One Full-Time, Year-Round, One Part-Time Worker)\n3 >= 1750 & <= 2340 Hrs (One Full-Time, Year-Round Worker)\n4 < 1750 Hrs (Less than One Full-Time, Year-Round Worker)\n5 No Hrs Worked"
+  },
+  {
+    "atributo": "wagp_adj",
+    "tipo_leido": "string (CSV original)",
+    "significado": "Wages or salary income past 12 months, adjusted by income adjustment factor",
+    "codigos_notas": "bbbbb =  N/A (less than 15 years old)\n00000  =  None\n00001 - 99999 = $1 to $99999 (Rounded)"
+  }
+]

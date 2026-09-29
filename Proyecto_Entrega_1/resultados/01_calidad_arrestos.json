@@ -1,0 +1,116 @@
+[
+  {
+    "columna": "arrest_key",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "arrest_date",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "pd_cd",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "pd_desc",
+    "faltantes": 3,
+    "total": 917,
+    "porcentaje": 0.327
+  },
+  {
+    "columna": "ky_cd",
+    "faltantes": 3,
+    "total": 917,
+    "porcentaje": 0.327
+  },
+  {
+    "columna": "ofns_desc",
+    "faltantes": 3,
+    "total": 917,
+    "porcentaje": 0.327
+  },
+  {
+    "columna": "law_code",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "law_cat_cd",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "arrest_boro",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "arrest_precinct",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "jurisdiction_code",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "age_group",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "perp_sex",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "perp_race",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "x_coord_cd",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "y_coord_cd",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "latitude",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "longitude",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  },
+  {
+    "columna": "lon_lat",
+    "faltantes": 0,
+    "total": 917,
+    "porcentaje": 0.0
+  }
+]
