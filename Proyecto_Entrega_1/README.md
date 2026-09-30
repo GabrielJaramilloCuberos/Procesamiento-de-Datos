@@ -190,9 +190,7 @@ En el cluster se emplean estas ubicaciones:
     Resúmenes, reportes, gráficas y CSV de población
 ```
 
-La carpeta `resultados` debe existir antes de ejecutar la celda de guardado del cuaderno 5. Los datos originales deben ser accesibles para los workers que los procesan; una ruta local no se vuelve compartida por estar dentro de una carpeta llamada cluster. Para trabajar desde diferentes servidores Jupyter, sus cuadernos deben acceder a los mismos archivos de resultados.
-
-El bono de NY Health es independiente del flujo anterior. En su versión guardada, la celda de selección de totales utiliza `df_anio` sin una definición previa en el código del cuaderno; para ejecutarlo de principio a fin debe definirse como el filtro de `df_nyc` para el año objetivo antes de esa selección.
+La carpeta `resultados` debe existir antes de ejecutar la celda de guardado del cuaderno 5. Los datos originales deben ser accesibles para los workers que los procesanm de tal forma que una ruta local no se vuelve compartida por estar dentro de una carpeta llamada cluster. Para trabajar desde diferentes servidores Jupyter, sus cuadernos deben acceder a los mismos archivos de resultados.
 
 ## Criterios para interpretar las salidas
 
