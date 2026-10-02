@@ -201,3 +201,41 @@ La carpeta `resultados` debe existir antes de ejecutar la celda de guardado del 
 - Los resultados territoriales describen patrones agregados y no demuestran relaciones causales entre pobreza, educación y arrestos.
 
 El repositorio conserva los cuadernos y las salidas compartidas como documentación del procedimiento. Volver a ejecutar el proyecto requiere los datasets originales, el módulo auxiliar y el entorno de procesamiento indicados anteriormente.
+
+## Módulo compartido `Utils`
+
+La carpeta `cuadernos/Utils/` es un paquete de Python, por lo que los cuadernos pueden reutilizar funciones comunes mediante:
+
+```python
+from Utils import proyecto as p
+from Utils.proyecto import ANIO, DATA_DIR, RESULTADOS
+```
+
+Su contenido es el siguiente:
+
+| Archivo | Función |
+|---|---|
+| `__init__.py` | Permite que Python reconozca `Utils` como un paquete importable. |
+| `config_cluster.local.json` | Contiene la configuración local utilizada para obtener la dirección del master del cluster. Debe ajustarse al entorno donde se ejecute el proyecto. |
+| `diccionarios.json` | Reúne los significados y códigos de los atributos de arrestos, vehículos y pobreza que se muestran en los cuadernos. |
+| `proyecto.py` | Módulo principal con las constantes y funciones compartidas del proyecto. |
+
+### `proyecto.py`
+
+Este archivo evita repetir el mismo código en cada cuaderno y procura que todos usen las mismas reglas. Centraliza el año de referencia, las rutas de entrada y salida, los nombres de los cinco boroughs y los diccionarios para traducir códigos territoriales y educativos.
+
+Sus funciones se organizan así:
+
+| Grupo | Funciones | Uso |
+|---|---|---|
+| Inicio de Spark | `iniciar_spark` | Verifica el kernel y las versiones, configura la sesión de Spark, limita los recursos de la aplicación, fija la zona horaria y crea la carpeta de resultados cuando es necesaria. |
+| Carga y formato | `normalizar`, `leer_csv`, `texto`, `numero`, `fecha`, `mapa` | Lee CSV conservando inicialmente los atributos como texto, normaliza nombres de columnas, interpreta vacíos, convierte números y fechas, y traduce códigos mediante mapas. |
+| Calidad y visualización | `calidad`, `tabla`, `filas`, `barras`, `diccionario` | Cuenta faltantes, muestra tablas pequeñas en Jupyter, limita la recolección de resultados al driver, genera gráficas y presenta el diccionario de atributos. |
+| Limpieza y cobertura | `depurar_identificador`, `cobertura` | Elimina duplicados exactos, excluye filas sin clave o con claves conflictivas del DataFrame depurado y construye la auditoría; además, resume la cobertura por año. |
+| Resultados e integración | `guardar_json`, `exportar_resumen`, `cargar_resumen` | Guarda resultados en JSON, exporta tablas agregadas junto con sus metadatos y vuelve a cargarlas para el cuaderno de integración. |
+
+`leer_csv` valida que existan las columnas requeridas antes de continuar. `numero` usa una conversión tolerante: cuando un texto no representa un número, devuelve un valor nulo en lugar de detener todo el procesamiento. `depurar_identificador` conserva el archivo de origen sin modificar; sus exclusiones se aplican al DataFrame preparado para cada análisis y quedan cuantificadas en la auditoría.
+
+Al exportar un resumen, `proyecto.py` guarda el año objetivo, el nombre, tamaño y fecha de modificación del archivo de origen, el esquema del DataFrame y las filas agregadas. Más adelante, `cargar_resumen` verifica que el CSV original no haya cambiado. Si cambió, solicita volver a ejecutar el cuaderno que generó ese resumen antes de hacer la integración.
+
+La carpeta `Utils` debe mantenerse dentro de `cuadernos/`, al mismo nivel que los archivos `.ipynb`, para que los imports anteriores funcionen al abrir los cuadernos desde esa carpeta.
