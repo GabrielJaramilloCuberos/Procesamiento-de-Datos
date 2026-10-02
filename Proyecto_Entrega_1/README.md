@@ -113,32 +113,34 @@ Fuentes utilizadas por los bonos:
 
 El cuaderno 5 ya multiplica por 1.000 las cifras expresadas en miles. El cuaderno 4 recibe habitantes y no repite esa conversión. Como la fuente publica cifras redondeadas a miles, las tasas resultantes son aproximadas.
 
-### Segundo bono de la carpeta Bonos · Consulta meteorológica con API
+### Segundo bono de la carpeta Bonos - Consulta meteorológica histórica con API
 
 [Abrir cuaderno](Bonos/02_Bono_ClimaAPI.ipynb)
 
-`02_Bono_ClimaAPI.ipynb` obtiene datos de OpenWeather para una ubicación de la ciudad de Nueva York. Realiza consultas a los endpoints `/weather` y `/forecast`: condición meteorológica actual y pronóstico de cinco días en intervalos de tres horas. Es una consulta a una API con autenticación, diferente de las extracciones de población anteriores.
+`02_Bono_ClimaAPI.ipynb` obtiene datos históricos de la Historical Weather API de Open-Meteo para los cinco distritos de la ciudad de Nueva York (Manhattan, Brooklyn, Queens, Bronx y Staten Island). Realiza una consulta por distrito al endpoint `/v1/archive` y obtiene variables meteorológicas diarias de todo 2018. Es una consulta a una API pública que no requiere clave, diferente de las extracciones de población anteriores.
 
 El procedimiento implementado comprende:
 
-- Consultar la API con una clave válida, controlar errores de autenticación y reintentar cuando se alcanza el límite de peticiones.
-- Guardar las respuestas originales en JSON, junto con la fecha de consulta y las unidades utilizadas.
-- Convertir las respuestas en tablas de condición actual y pronóstico con pandas.
-- Preparar fechas y variables como temperatura, sensación térmica, humedad, presión, nubosidad, viento y precipitación.
-- Eliminar duplicados del pronóstico por ciudad y fecha-hora, y ordenar los registros.
-- Construir un resumen diario con medias, mínimos, máximos, precipitación acumulada y condición más frecuente. Se consideran completos los días con ocho registros de tres horas.
-- Revisar faltantes, duplicados y tipos de datos; visualizar temperatura, sensación térmica y probabilidad de lluvia. La gráfica de temperaturas diarias utiliza los días completos.
+- Consultar la API una vez por distrito con las variables diarias de 2018, controlar los errores de parámetros y reintentar cuando se alcanza el límite de peticiones.
+- Guardar las respuestas originales en JSON, junto con la fecha de consulta, el año, las variables solicitadas y las coordenadas de cada distrito.
+- Convertir las respuestas en una tabla diaria por distrito con pandas, incluyendo la celda de la malla y la elevación que usó la API.
+- Preparar fechas y variables como temperatura media, máxima y mínima, sensación térmica, precipitación, lluvia, nevada, viento, ráfagas, radiación y horas de sol. El código de clima se traduce a una descripción y se crean indicadores de día lluvioso (al menos 1 mm) y de día con nieve (al menos 1 cm).
+- Eliminar duplicados por distrito y fecha, y ordenar los registros.
+- Construir resúmenes semanales (de lunes a domingo), mensuales y anuales por distrito, con medias, mínimos, máximos, precipitación y nevada acumuladas y número de días de lluvia y de nieve. Se consideran completas las semanas con siete días y los meses con todos sus días; 2018 tiene 52 semanas completas y una semana 53 con un solo día.
+- Revisar faltantes, duplicados y tipos de datos, y verificar que haya 5 distritos, 365 días, 53 semanas y 12 meses por distrito. También se comprueba si algunos distritos comparten la misma celda de la malla y cuál es la mayor diferencia mensual de temperatura entre ellos.
+- Visualizar la temperatura media semanal, la precipitación total mensual y el resumen anual de temperatura y precipitación por distrito. La gráfica semanal utiliza solo las semanas completas.
 
 Sus archivos se generan en `datos/`, relativa al directorio desde el que se ejecuta el cuaderno:
 
 | Archivo | Contenido |
 |---|---|
-| `respuestas_openweather.json` | Respuestas originales de condición actual y pronóstico, con metadatos de consulta. |
-| `clima_ny_actual.csv` | Condición meteorológica actual de la ubicación consultada. |
-| `clima_ny_pronostico_3h.csv` | Pronóstico preparado en intervalos de tres horas. |
-| `clima_ny_diario.csv` | Indicadores agregados por día y marca de día completo. |
+| `respuestas_openmeteo_2018.json` | Respuestas originales de los cinco distritos, con metadatos de consulta. |
+| `clima_ny_2018_diario.csv` | Tabla diaria preparada por distrito. |
+| `clima_ny_2018_semanal.csv` | Indicadores agregados por semana y distrito, con marca de semana completa. |
+| `clima_ny_2018_mensual.csv` | Indicadores agregados por mes y distrito, con marca de mes completo. |
+| `clima_ny_2018_anual.csv` | Resumen del año completo por distrito. |
 
-Las gráficas se muestran dentro del cuaderno. Estas salidas corresponden al momento de consulta y al horizonte del pronóstico, **no al año 2018**. El bono no alimenta el cuaderno 4 ni se cruza con los registros históricos de arrestos, vehículos o pobreza. Los archivos generados no se guardan automáticamente en la carpeta común `resultados`.
+Las gráficas se muestran dentro del cuaderno. Estas salidas corresponden **al año 2018 completo**, no al momento de consulta. Los datos son de reanálisis (modelos que combinan estaciones, satélites y radares) con una malla de unos 9 a 25 km, no mediciones de una estación, por lo que distritos cercanos pueden compartir celda y mostrar valores iguales o casi iguales; la comparación entre distritos es aproximada. El bono no alimenta el cuaderno 4 ni se cruza con los registros históricos de arrestos, vehículos o pobreza. Los archivos generados no se guardan automáticamente en la carpeta común `resultados`.
 
 ## Comunicación y orden de ejecución
 
