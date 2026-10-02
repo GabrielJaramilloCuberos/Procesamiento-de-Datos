@@ -4,6 +4,8 @@ Este proyecto documenta la carga, exploración, revisión de calidad, preparaci�
 
 Se trabajan tres conjuntos de datos: arrestos, vehículos involucrados en colisiones y pobreza. El perfil educativo se obtiene del propio dataset de pobreza. La integración incorpora además población por distrito obtenida mediante extracción web.
 
+**Link del video de la demostración del uso del clúster: https://youtu.be/uUGuyTqQTmA**
+
 ## Estructura de la carpeta
 
 ```text
