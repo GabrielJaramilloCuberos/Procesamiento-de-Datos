@@ -1,4 +1,4 @@
-# Proyecto de procesamiento de datos · Entrega 1
+# Proyecto de procesamiento de datos - Entrega 1
 
 Este proyecto documenta la carga, exploración, revisión de calidad, preparación e integración de datos de la ciudad de Nueva York (NYC), con 2018 como año de referencia. El procesamiento principal se realiza con PySpark en un cluster y se presenta mediante cuadernos de Jupyter con explicaciones, tablas y gráficas.
 
