@@ -1,7 +1,7 @@
 #<------------------------------------------------------->#
 # Nombres:                                                #
 # - Gabriel Jaramillo Cuberos (Id: 20529022)              #
-# - Samuel Beltrán Martínez (Id: )                        #
+#                                                         #
 # - David Vargas (Id: )                                   #
 # - Juan Felipe Gómez López (Id: 20553416)                #
 # - Sara Pulgarín (Id: 20491129)                          #
