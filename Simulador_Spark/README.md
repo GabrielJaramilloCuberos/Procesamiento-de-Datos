@@ -68,9 +68,19 @@ Vercel publicará index.html como página principal.
 
 ~~~text
 Simulador_Spark/
-├── index.html    Simulador, estilos y lógica JavaScript
-└── README.md     Documentación del proyecto
+├── index.html       Estructura y contenido de la página
+├── css/
+│   └── style.css    Estilos, colores, diseño y adaptación móvil
+├── js/
+│   └── app.js       Estado, simulación, planificador y gráfica
+└── README.md        Documentación del proyecto
 ~~~
+
+El código se separó intencionalmente para facilitar su lectura y mantenimiento:
+
+- **index.html** contiene únicamente la estructura de la interfaz y las referencias a los archivos de estilos y lógica.
+- **css/style.css** contiene los estilos visuales de los paneles, workers, métricas, botones y diseño responsivo.
+- **js/app.js** contiene el comportamiento del simulador: generación de jobs, particiones, planificación, fallos, recuperación, métricas y gráfica.
 
 ## Referencia conceptual
 
