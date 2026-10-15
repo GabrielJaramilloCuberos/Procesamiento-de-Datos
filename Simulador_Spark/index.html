@@ -37,7 +37,18 @@
           <div class="cluster-head"><h2>Topología y distribución de tareas</h2><div class="legend"><span><i style="background:#3bd698"></i>Activo</span><span><i style="background:#ffd166"></i>En cola</span><span><i style="background:#ff5c73"></i>No disponible</span></div></div>
           <div class="topology">
             <article class="node driver"><div class="type">Driver / Master</div><div class="name">SparkContext</div><div class="node-data">Jobs recibidos: <b id="jobsReceived">0</b><br>Tareas planificadas: <b id="scheduled">0</b><br>Modo: <b id="mode">Adaptativo</b></div></article>
-            <div class="arrow">→</div><div class="workers" id="workersContainer"></div>
+            <!-- Esta conexión representa el envío de tareas desde el Driver
+                 hacia los executors ubicados en los workers. -->
+            <div class="arrow" aria-label="Flujo de tareas del driver a los workers">
+              <span class="route"></span>
+              <span class="packet packet-one"></span>
+              <span class="packet packet-two"></span>
+              <span class="packet packet-three"></span>
+            </div>
+            <div class="workers" id="workersContainer"></div>
+          </div>
+          <div class="dispatch-summary" id="dispatchSummary">
+            El Driver está esperando tareas para distribuir.
           </div>
         </section>
         <section class="bottom">
