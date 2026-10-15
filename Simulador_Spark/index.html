@@ -4,8 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SparkScope | Simulador Apache Spark</title>
-  <!-- Los estilos viven en css/style.css para separarlos de la estructura HTML. -->
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /*
+     * SparkScope — estilos de la interfaz.
+     * Este archivo define el diseño visual, los colores de estado y la adaptación
+     * para pantallas pequeñas. No contiene lógica de simulación.
+     */
+    
+    :root{--bg:#07111f;--panel:#0d1b2e;--line:#24415f;--text:#edf5ff;--muted:#9fb3c8;--blue:#4aa3ff;--cyan:#41d7e7;--orange:#ff8a3d;--red:#ff5c73;--green:#3bd698;--yellow:#ffd166}
+        *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 20% 0,#153657 0,var(--bg) 45%);color:var(--text);font-family:Inter,system-ui,sans-serif}
+        .shell{max-width:1500px;margin:auto;padding:26px}.head{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:20px}.brand{display:flex;gap:14px;align-items:center}.logo{width:48px;height:48px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,var(--orange),#ffd166);color:#3b210f;font-weight:900;font-size:21px}.head h1{margin:0;font-size:2rem;letter-spacing:-.05em}.head p{margin:3px 0 0;color:var(--muted)}.status{border:1px solid #2e6d64;color:#84f0c5;background:#12352f;border-radius:20px;padding:8px 12px;font-size:.83rem;font-weight:700}
+        .layout{display:grid;grid-template-columns:285px minmax(0,1fr);gap:20px}.panel{background:rgba(13,27,46,.91);border:1px solid var(--line);border-radius:16px;box-shadow:0 18px 45px #0004}.controls{padding:19px;height:max-content;position:sticky;top:15px}h2{font-size:1rem;margin:0 0 16px}.control{margin-bottom:17px}.control-row{display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem;margin-bottom:7px}.control-row b{color:var(--text)}input[type=range]{width:100%;accent-color:var(--orange)}.toggle{display:flex;justify-content:space-between;gap:10px;color:var(--muted);font-size:.84rem;margin-bottom:17px}.toggle input{accent-color:var(--orange);width:18px;height:18px}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:9px}.btn{border:1px solid #345777;border-radius:10px;padding:10px;background:#17304d;color:var(--text);font-weight:700;font-size:.8rem;cursor:pointer}.btn:hover{background:#204264}.primary{background:var(--orange);border-color:var(--orange);color:#35200e}.danger{background:#3b1822;border-color:#863547;color:#ffdce2}.note{color:var(--muted);font-size:.76rem;line-height:1.45;margin:17px 0 0}
+        .metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:20px}.metric{padding:15px}.metric label{display:block;color:var(--muted);font-size:.74rem}.metric strong{display:block;font-size:1.55rem;letter-spacing:-.05em;margin:7px 0 3px}.metric small{color:var(--muted);font-size:.71rem}.green{color:var(--green)}.orange{color:var(--orange)}.blue{color:var(--blue)}.red{color:var(--red)}
+        .cluster{padding:18px;margin-bottom:20px}.cluster-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:16px}.legend{color:var(--muted);font-size:.74rem}.legend span{margin-left:10px}.legend i{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px}.topology{display:grid;grid-template-columns:180px 65px minmax(0,1fr);align-items:stretch;gap:10px}.node{padding:14px;border:1px solid #315879;border-radius:13px;background:#10243d}.driver{border-color:#a96331;background:linear-gradient(135deg,#2b1b15,#122941)}.type{font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}.name{font-weight:850;margin:6px 0 9px}.node-data{font-size:.77rem;line-height:1.55;color:#c7d9e9}
+        /* Línea y paquetes animados: representan el envío de tareas del Driver
+           hacia los executors. El movimiento no representa tráfico de red real. */
+        .arrow{display:grid;place-items:center;position:relative;min-height:130px}.route{width:100%;height:2px;background:#315879;display:block;position:relative}.route::after{content:"";position:absolute;right:-1px;top:-4px;border-left:8px solid var(--blue);border-top:5px solid transparent;border-bottom:5px solid transparent}.packet{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--orange);box-shadow:0 0 12px var(--orange);animation:dispatch 1.7s linear infinite}.packet-two{animation-delay:.55s}.packet-three{animation-delay:1.1s}@keyframes dispatch{0%{left:3%;opacity:0}15%{opacity:1}85%{opacity:1}100%{left:88%;opacity:0}}.dispatch-summary{margin:15px 0 0;padding:10px 12px;border-radius:9px;border:1px dashed #315879;background:#0a1829;color:#bed2e4;font-size:.78rem}.dispatch-summary strong{color:var(--orange)}
+        .workers{display:grid;grid-template-columns:repeat(auto-fit,minmax(172px,1fr));gap:10px}.worker.down{background:#2a1621;border-color:#8d3549}.worker.receiving{border-color:var(--orange);animation:workerPulse .9s ease-out}.worker-top{display:flex;justify-content:space-between;gap:6px}.badge{font-size:.62rem;border-radius:20px;padding:3px 6px;background:#143e35;color:var(--green);height:max-content}.down .badge{color:#ff9cac;background:#4a1927}.bar-label{display:flex;justify-content:space-between;color:var(--muted);font-size:.69rem;margin:10px 0 4px}.bar{height:7px;background:#07111f;border-radius:20px;overflow:hidden}.bar div{height:100%;background:linear-gradient(90deg,var(--cyan),var(--blue));border-radius:20px}.down .bar div{background:var(--red)}.tasks{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}.task{width:20px;height:20px;border:1px solid #5bc2ec;background:#267ab8;border-radius:5px;display:grid;place-items:center;font-size:.56rem}.empty{background:#162b42;border-color:#29445e;color:#66809a}@keyframes workerPulse{0%{box-shadow:0 0 0 0 rgba(255,138,61,.75)}100%{box-shadow:0 0 0 15px rgba(255,138,61,0)}}
+        .bottom{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}.chart,.queue,.info{padding:18px}canvas{width:100%;height:220px;display:block;margin-top:12px}.jobs{display:grid;gap:8px;max-height:250px;overflow:auto}.job{border-left:3px solid var(--yellow);padding:8px 10px;background:#10243d;border-radius:0 8px 8px 0;font-size:.78rem}.job span{color:var(--muted)}.empty-msg{color:var(--muted);text-align:center;padding:48px 8px;font-size:.84rem}.info{margin-top:20px}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.info-item{border-left:2px solid var(--orange);padding-left:10px}.info-item h3{font-size:.87rem;margin:0}.info-item p{color:var(--muted);font-size:.77rem;line-height:1.45;margin:6px 0 0}footer{text-align:center;color:#7892ad;font-size:.72rem;margin:22px 0 0}
+        @media(max-width:1080px){.layout{grid-template-columns:1fr}.controls{position:static}.metrics{grid-template-columns:repeat(3,1fr)}}@media(max-width:680px){.shell{padding:15px}.head{align-items:flex-start}.head h1{font-size:1.55rem}.head p{font-size:.8rem}.status{display:none}.metrics,.bottom,.info-grid{grid-template-columns:1fr}.topology{grid-template-columns:1fr}.arrow{transform:rotate(90deg);min-height:28px}}
+  </style>
 </head>
 <body>
   <div class="shell">
@@ -64,9 +82,69 @@
     </div>
     <footer>Modelo pedagógico: las duraciones y métricas son simuladas; no corresponden a un clúster en producción.</footer>
   </div>
-  <!-- La lógica del simulador se carga después de construir la página. -->
-  <script src="js/app.js" defer></script>
+  <script>
+    /*
+     * SparkScope — motor de la simulación.
+     * Contiene el estado del clúster simulado, el planificador, los fallos,
+     * las métricas y las actualizaciones visuales de la interfaz.
+     */
+    
+    "use strict";
+        // Controles que permiten modificar el tamaño y comportamiento del clúster.
+        const input = {
+          users: document.getElementById("users"), workers: document.getElementById("workers"),
+          cores: document.getElementById("cores"), partitions: document.getElementById("partitions"),
+          faultRate: document.getElementById("faultRate"), adaptive: document.getElementById("adaptive")
+        };
+        const labels = {
+          users: document.getElementById("usersValue"), workers: document.getElementById("workersValue"),
+          cores: document.getElementById("coresValue"), partitions: document.getElementById("partitionsValue"),
+          faultRate: document.getElementById("faultValue")
+        };
+        // Estado central. Las tareas viven en cola o dentro de un worker.
+        const state = {running:true, jobId:0, taskId:0, completed:0, failures:0, totalLatency:0, jobsReceived:0, scheduled:0, autoClock:0, workers:[], queue:[], history:[], lastDispatch:null};
+        function settings(){return {users:+input.users.value,workerCount:+input.workers.value,cores:+input.cores.value,partitions:+input.partitions.value,faultRate:+input.faultRate.value,adaptive:input.adaptive.checked};}
+        function random(min,max){return Math.floor(Math.random()*(max-min+1))+min;}
+        function updateLabels(){labels.users.textContent=input.users.value;labels.workers.textContent=input.workers.value;labels.cores.textContent=input.cores.value;labels.partitions.textContent=input.partitions.value;labels.faultRate.textContent=input.faultRate.value+"%";}
+        function worker(id){return {id:id,status:"up",recovery:0,tasks:[],durations:[],recentFailures:0,pulse:0};}
+        // Si se reducen workers, sus tareas no se pierden: regresan a la cola.
+        function syncWorkers(){const total=settings().workerCount;while(state.workers.length<total)state.workers.push(worker(state.workers.length+1));while(state.workers.length>total){const removed=state.workers.pop();removed.tasks.forEach(function(t){t.assignedTo=null;state.queue.unshift(t);});}}
+        // Un job se divide en una tarea por cada partición seleccionada.
+        function submitJob(){const cfg=settings(),id=++state.jobId;for(let i=0;i<cfg.partitions;i+=1)state.queue.push({id:++state.taskId,jobId:id,remaining:random(4,11),original:0,wait:0,assignedTo:null});state.jobsReceived+=1;state.scheduled+=cfg.partitions;}
+        function freeWorkers(){const cfg=settings();return state.workers.filter(function(w){return w.status==="up"&&w.tasks.length<cfg.cores;});}
+        // La puntuación representa una decisión adaptativa basada en observaciones previas.
+        function score(w,cores){const avg=w.durations.length?w.durations.reduce(function(a,b){return a+b;},0)/w.durations.length:7;return w.tasks.length/cores*5+avg*.18+w.tasks.length*.14+w.recentFailures*1.4;}
+        // Cuando una tarea se asigna, se registra el destino para alimentar el
+        // mensaje visual y se activa un pulso sobre el worker receptor.
+        function schedule(){const cfg=settings();let available=freeWorkers();while(state.queue.length&&available.length){let chosen=available[0];if(cfg.adaptive)chosen=available.reduce(function(best,candidate){return score(candidate,cfg.cores)<score(best,cfg.cores)?candidate:best;},available[0]);const task=state.queue.shift();task.assignedTo=chosen.id;task.original=task.remaining;chosen.tasks.push(task);chosen.pulse=2;state.lastDispatch={taskId:task.id,jobId:task.jobId,workerId:chosen.id};available=freeWorkers();}}
+        function progress(){state.workers.forEach(function(w){w.pulse=Math.max(0,w.pulse-1);if(w.status!=="up")return;for(let i=w.tasks.length-1;i>=0;i-=1){const task=w.tasks[i];task.remaining-=1;if(task.remaining<=0){const latency=task.original+task.wait;state.completed+=1;state.totalLatency+=latency;w.durations.push(task.original);if(w.durations.length>10)w.durations.shift();w.tasks.splice(i,1);}}});state.queue.forEach(function(t){t.wait+=1;});}
+        // Al fallar, las tareas activas vuelven a estar disponibles para reasignación.
+        function failWorker(w){if(!w||w.status!=="up")return false;w.status="down";w.recovery=random(5,10);w.recentFailures+=1;state.failures+=1;w.tasks.forEach(function(t){t.assignedTo=null;t.remaining=Math.max(2,t.remaining);state.queue.unshift(t);});w.tasks=[];return true;}
+        function recover(){state.workers.forEach(function(w){if(w.status==="down"){w.recovery-=1;if(w.recovery<=0){w.status="up";w.recentFailures=Math.max(0,w.recentFailures-1);}}});}
+        function autoJob(){const cfg=settings();state.autoClock+=1;const interval=Math.max(3,19-Math.floor(cfg.users/2));if(state.autoClock>=interval){submitJob();state.autoClock=0;}}
+        function randomFailure(){const cfg=settings();if(Math.random()<cfg.faultRate/1000){const candidates=state.workers.filter(function(w){return w.status==="up";});if(candidates.length)failWorker(candidates[random(0,candidates.length-1)]);}}
+        function pct(value,total){return total?Math.min(100,Math.round(value*100/total)):0;}
+        function record(){const cfg=settings(),capacity=state.workers.length*cfg.cores,active=state.workers.reduce(function(sum,w){return sum+w.tasks.length;},0);state.history.push({queue:state.queue.length,util:pct(active,capacity)});if(state.history.length>30)state.history.shift();}
+        function renderWorkers(){const cfg=settings(),box=document.getElementById("workersContainer");box.innerHTML="";state.workers.forEach(function(w){const active=w.tasks.length,memory=Math.min(100,active*18+(w.status==="down"?0:6)),card=document.createElement("article");card.className="node worker"+(w.status==="down"?" down":"")+(w.pulse>0?" receiving":"");let tasks="";for(let i=0;i<cfg.cores;i+=1){const t=w.tasks[i];tasks+=t?'<div class="task" title="Job '+t.jobId+', tarea '+t.id+'">T'+t.id+"</div>":'<div class="task empty">·</div>';}const status=w.status==="down"?"RECUPERANDO "+w.recovery+"s":"ACTIVO";card.innerHTML='<div class="worker-top"><div><div class="type">Worker '+w.id+'</div><div class="name">Executor '+w.id+'</div></div><span class="badge">'+status+"</span></div>"+'<div class="bar-label"><span>Cores</span><span>'+active+" / "+cfg.cores+"</span></div><div class=\"bar\"><div style=\"width:"+pct(active,cfg.cores)+'%"></div></div><div class="bar-label"><span>Memoria simulada</span><span>'+memory+'%</span></div><div class="bar"><div style="width:'+memory+'%"></div></div><div class="tasks">'+tasks+"</div>";box.appendChild(card);});}
+        function renderJobs(){const box=document.getElementById("jobs");if(!state.queue.length){box.innerHTML='<div class="empty-msg">No hay tareas esperando recursos.</div>';return;}const grouped={};state.queue.forEach(function(t){grouped[t.jobId]=(grouped[t.jobId]||0)+1;});box.innerHTML=Object.keys(grouped).slice(0,8).map(function(id){return '<div class="job"><b>Job '+id+"</b><br><span>"+grouped[id]+" tarea(s) pendientes</span></div>";}).join("");}
+        function renderMetrics(){const cfg=settings(),capacity=state.workers.length*cfg.cores,active=state.workers.reduce(function(sum,w){return sum+w.tasks.length;},0),down=state.workers.filter(function(w){return w.status!=="up";}).length;document.getElementById("completed").textContent=state.completed;document.getElementById("queued").textContent=state.queue.length;document.getElementById("utilization").textContent=pct(active,capacity)+"%";document.getElementById("latency").textContent=(state.completed?state.totalLatency/state.completed:0).toFixed(1)+" s";document.getElementById("down").textContent=down;document.getElementById("failures").textContent=state.failures;document.getElementById("jobsReceived").textContent=state.jobsReceived;document.getElementById("scheduled").textContent=state.scheduled;document.getElementById("mode").textContent=cfg.adaptive?"Adaptativo":"Primero disponible";document.getElementById("status").textContent=state.running?"● Simulación en ejecución":"● Simulación pausada";}
+        // Gráfica Canvas propia para que el archivo no dependa de una biblioteca o CDN.
+        function renderChart(){const canvas=document.getElementById("chart"),rect=canvas.getBoundingClientRect(),ratio=window.devicePixelRatio||1,ctx=canvas.getContext("2d");canvas.width=Math.max(1,Math.floor(rect.width*ratio));canvas.height=Math.max(1,Math.floor(rect.height*ratio));ctx.scale(ratio,ratio);const w=rect.width,h=rect.height,p={l:33,r:12,t:14,b:27},data=state.history.length?state.history:[{queue:0,util:0}],maxQueue=Math.max(8,data.reduce(function(m,v){return Math.max(m,v.queue);},0));ctx.clearRect(0,0,w,h);ctx.strokeStyle="rgba(159,179,200,.18)";for(let i=0;i<4;i+=1){const y=p.t+i*(h-p.t-p.b)/3;ctx.beginPath();ctx.moveTo(p.l,y);ctx.lineTo(w-p.r,y);ctx.stroke();}function line(key,max,color){ctx.strokeStyle=color;ctx.lineWidth=2.5;ctx.beginPath();data.forEach(function(v,i){const x=p.l+i*(w-p.l-p.r)/Math.max(1,data.length-1),y=h-p.b-v[key]*(h-p.t-p.b)/max;if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.stroke();}line("queue",maxQueue,"#ff8a3d");line("util",100,"#4aa3ff");ctx.font="11px system-ui";ctx.fillStyle="#ff8a3d";ctx.fillRect(p.l,h-15,8,3);ctx.fillStyle="#9fb3c8";ctx.fillText("cola",p.l+12,h-10);ctx.fillStyle="#4aa3ff";ctx.fillRect(p.l+53,h-15,8,3);ctx.fillStyle="#9fb3c8";ctx.fillText("utilización",p.l+65,h-10);ctx.fillText(maxQueue+" tareas",0,p.t+4);ctx.fillText("100%",0,h-p.b+4);}
+        function renderDispatch(){const box=document.getElementById("dispatchSummary"),last=state.lastDispatch;if(!last){box.textContent="El Driver está esperando tareas para distribuir.";return;}box.innerHTML="El Driver envió la <strong>tarea T"+last.taskId+"</strong> del Job "+last.jobId+" al <strong>Worker "+last.workerId+"</strong>."; }
+        function render(){renderMetrics();renderWorkers();renderJobs();renderDispatch();renderChart();}
+        // Bucle: recuperación, progreso, nueva carga, fallos, planificación y renderizado.
+        function tick(){if(!state.running)return;syncWorkers();recover();progress();autoJob();randomFailure();schedule();record();render();}
+        function reset(){Object.assign(state,{running:true,jobId:0,taskId:0,completed:0,failures:0,totalLatency:0,jobsReceived:0,scheduled:0,autoClock:0,workers:[],queue:[],history:[],lastDispatch:null});syncWorkers();submitJob();schedule();record();document.getElementById("toggle").textContent="Pausar";render();}
+        Object.keys(input).forEach(function(key){input[key].addEventListener("input",function(){updateLabels();syncWorkers();schedule();render();});});
+        document.getElementById("addJob").addEventListener("click",function(){submitJob();schedule();render();});
+        document.getElementById("toggle").addEventListener("click",function(){state.running=!state.running;this.textContent=state.running?"Pausar":"Reanudar";render();});
+        document.getElementById("fail").addEventListener("click",function(){const candidates=state.workers.filter(function(w){return w.status==="up";});if(candidates.length)failWorker(candidates[random(0,candidates.length-1)]);schedule();render();});
+        document.getElementById("reset").addEventListener("click",reset);window.addEventListener("resize",renderChart);
+        updateLabels();reset();window.setInterval(tick,700);
+  </script>
 </body>
 </html>
+
+
 
 

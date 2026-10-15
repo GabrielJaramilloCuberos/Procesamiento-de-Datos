@@ -2,7 +2,7 @@
 
 SparkScope es un simulador web interactivo que explica visualmente cómo se distribuye una carga de trabajo en un clúster Apache Spark y cómo este responde ante cambios de carga y fallos de workers.
 
-El proyecto se implementa como un único archivo HTML. Funciona al abrirlo localmente en un navegador y puede desplegarse como sitio estático en Vercel.
+El proyecto se implementa como un único archivo HTML. La estructura, los estilos, la lógica de simulación y las animaciones visuales están incluidos en `index.html`. Funciona al abrirlo localmente en un navegador y puede desplegarse como sitio estático en Vercel.
 
 ## Objetivo pedagógico
 
@@ -68,19 +68,11 @@ Vercel publicará index.html como página principal.
 
 ~~~text
 Simulador_Spark/
-├── index.html       Estructura y contenido de la página
-├── css/
-│   └── style.css    Estilos, colores, diseño y adaptación móvil
-├── js/
-│   └── app.js       Estado, simulación, planificador y gráfica
-└── README.md        Documentación del proyecto
+├── index.html    Simulador completo: HTML, CSS, JavaScript y animaciones
+└── README.md     Documentación del proyecto
 ~~~
 
-El código se separó intencionalmente para facilitar su lectura y mantenimiento:
-
-- **index.html** contiene únicamente la estructura de la interfaz y las referencias a los archivos de estilos y lógica.
-- **css/style.css** contiene los estilos visuales de los paneles, workers, métricas, botones y diseño responsivo.
-- **js/app.js** contiene el comportamiento del simulador: generación de jobs, particiones, planificación, fallos, recuperación, métricas y gráfica.
+El archivo index.html contiene comentarios que separan la interfaz, los estilos visuales y la lógica JavaScript. Esta versión autocontenida facilita la entrega: basta con subir o abrir un solo archivo HTML.
 
 ## Referencia conceptual
 
