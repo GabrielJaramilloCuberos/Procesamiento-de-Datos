@@ -1,3 +1,19 @@
+![Logo Javeriana](https://images.seeklogo.com/logo-png/11/1/pontificia-universidad-javeriana-logo-png_seeklogo-110703.png)
+
+## Nombre
+
+- Gabriel Jaramillo Cuberos (ID: 20529022)
+
+### Simulador Apache Spark
+
+*Materia:* Procesamiento de Datos (1255)
+
+*Tema:* Distribución de carga, recursos y tolerancia a fallos en Apache Spark.
+
+*Descripción:* Simulador web interactivo que representa jobs, tareas, workers, cores, métricas, planificación adaptativa y recuperación ante fallos.
+
+*Nombre del fichero:* index.html
+
 # SparkScope: simulador de Apache Spark
 
 SparkScope es un simulador web interactivo que explica visualmente cómo se distribuye una carga de trabajo en un clúster Apache Spark y cómo este responde ante cambios de carga y fallos de workers.
